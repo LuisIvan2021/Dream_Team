@@ -1,0 +1,7 @@
+nav {
+    padding: 10px; /* Aumenta el padding vertical */
+    height: 120px;    /* Establece una altura fija */
+}
+.brand-logo img, .right img {
+    height: 50px; /* Ajusta el tamaño de las imágenes si es necesario */
+}
