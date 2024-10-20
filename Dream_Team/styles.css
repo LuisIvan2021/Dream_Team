@@ -5,3 +5,65 @@ nav {
 .brand-logo img, .right img {
     height: 50px; /* Ajusta el tamaño de las imágenes si es necesario */
 }
+
+.large-font {
+    font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+    border: 2px solid transparent; /* Borde inicial */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave */
+    position: relative; /* Necesario para el pseudo-elemento */
+  }
+  
+  .large-font:hover {
+    border-color: rgb(190, 164, 17); /* Color dorado al pasar el puntero */
+    box-shadow: 0 0 10px gold, 0 0 20px gold; /* Brillo dorado */
+  }
+  
+  .large-font a {
+    color: inherit; /* Mantener el color del texto */
+  }
+  
+  /* Cambia el color de las ondas doradas */
+  .large-font:active {
+    color: rgb(0, 17, 255); /* Cambiar el color del texto al dorado al hacer clic */
+  }
+  
+  .large-font:active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px; /* Asegúrate de que coincida con el borde */
+    background-color: rgba(255, 217, 0, 0.301); /* Color dorado semitransparente */
+    opacity: 1; /* Hacer visible el efecto dorado */
+    transition: opacity 0.3s; /* Transición suave */
+    z-index: -1; /* Asegúrate de que esté detrás del texto */
+  }
+  
+  .small-font {
+    font-size: 15px; /* Ajusta el tamaño según tus necesidades */
+    color: aliceblue;
+    background-color: #1b39bb; /* Azul específico */
+    border: 2px solid transparent; /* Borde inicial */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave */
+    position: relative; /* Necesario para el pseudo-elemento */
+  }
+  .small-font a {
+    background-color: #1b39bb;
+    color: inherit; /* Mantener el color del texto */
+  }
+
+.small-font:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px; /* Asegúrate de que coincida con el borde */
+  background-color: rgba(255, 217, 0, 0.301); /* Color dorado semitransparente */
+  opacity: 1; /* Hacer visible el efecto dorado */
+  transition: opacity 0.3s; /* Transición suave */
+  z-index: -1; /* Asegúrate de que esté detrás del texto */
+}
