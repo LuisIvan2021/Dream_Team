@@ -24,7 +24,7 @@
               <h3 class="waves-effect waves-light large-font"><a href="">Iniciar Sesión</a></h3>
             </li>
             <li>
-              <h3 class="waves-effect waves-light large-font"><a href="index.html">Inicio</a></h3>
+              <h3 class="waves-effect waves-light large-font"><a href="index.php">Inicio</a></h3>
             </li>
           </ul>
     
