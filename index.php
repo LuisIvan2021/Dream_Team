@@ -18,7 +18,7 @@
         <img src="https://www.unam.mx/sites/default/files/images/unam.svg" style="height: 100px;">
         
         <img src="https://amei.mx/wp-content/uploads/2016/08/UNAM-FES-Aragon.png" style="height: 100px;">
-        <img src="C:\Users\Usuario\Documents\Tareas\redes_Web\proyecto\Dream_Team\imagenes\ICO_logo.png" style="height: 100px;">
+        <img src="imagenes/ICO_logo.png" style="height: 100px;">
       </a>
       <ul class="right hide-on-med-and-down">
         <li>
@@ -117,69 +117,52 @@
     <br><br>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">https://aragon.unam.mx/fes-aragon/?authuser=1#!/oferta-academica/licenciaturas/computacion</a></li>
-           
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
+  <div id="footer-placeholder"></div>
+  <script>
+    // Cargar el contenido del archivo footer.html dentro del footer-placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems);
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    M.Collapsible.init(elems);
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inicializar los elementos 'collapsible'
+      var elems = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(elems);
 
-    // Obtener todos los botones
-    var buttons = document.querySelectorAll('[id^="info-button-"]');
-    var headers = document.querySelectorAll('.collapsible-header');
+      // Obtener todos los botones
+      var buttons = document.querySelectorAll('[id^="info-button-"]');
+      var headers = document.querySelectorAll('.collapsible-header');
 
-    headers.forEach(function(header, index) {
-      header.addEventListener('click', function() {
-        var body = header.nextElementSibling;
-        if (body.style.display === 'block') {
-          buttons[index].style.display = 'none'; // Ocultar el botón
-        } else {
-          buttons[index].style.display = 'block'; // Mostrar el botón
-        }
+      headers.forEach(function(header, index) {
+        header.addEventListener('click', function() {
+          var body = header.nextElementSibling;
+          if (body.style.display === 'block') {
+            buttons[index].style.display = 'none'; // Ocultar el botón
+          } else {
+           buttons[index].style.display = 'block'; // Mostrar el botón
+          }
+        });
       });
+
+      // Asignar eventos de clic a cada botón para redirigir a su URL correspondiente
+      document.getElementById("info-button-1").addEventListener('click', function() {
+        window.location.href = "escritoYReplica.html"; // URL de destino para la primera sección
+      });
+
+      document.getElementById("info-button-2").addEventListener('click', function() {
+        window.location.href = "escritoSinReplica.html"; // URL de destino para la segunda sección
+      });
+
+      document.getElementById("info-button-3").addEventListener('click', function() {
+        window.location.href = "sinEscrito.html"; // URL de destino para la tercera sección
+     });
     });
-  });
 </script>
 </body>
 </html>
