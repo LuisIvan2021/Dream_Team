@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modalidad Sin Trabajo Escrito</title>
+  
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+  <!-- Iconos Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Estilo adicional -->
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #1e88e5;
+    }
+
+    footer {
+      background-color: #263238;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    a {
+      color: #1e88e5;
+    }
+  </style>
 </head>
 <body>
-    
+  <!-- Encabezado con barra de navegación -->
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo center">Modalidad Sin Trabajo Escrito</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="modalidad-sin-trabajo">
+      <h2>Titulación mediante examen general de conocimientos externos</h2>
+      <p>Consiste en aprobar un examen escrito aplicado por una institución alterna a la FES ARAGÓN.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/cise/lineamientos-internos-titulacion.pdf" target="_blank">En base a artículos 26, 59, y 60</a></li>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/examen-general.pdf" target="_blank">Instituciones que aplican el examen general</a></li>
+      </ul>
+
+      <h2>Titulación por totalidad de créditos y alto nivel académico</h2>
+      <p>Consiste en un trabajo escrito o monográfico de una temática relacionada con algún tema visto o relacionado con la carrera.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/info-alto-nivel.pdf" target="_blank">Información sobre alto nivel académico</a></li>
+      </ul>
+
+      <h2>Titulación mediante estudios de posgrado</h2>
+      <p>Consiste en meter un estudio de posgrado validado por la carrera.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="http://www.mcc.unam.mx" target="_blank">Maestría en Ciencia e Ingeniería en Computación</a></li>
+        <li><a href="https://posgrado.fca.unam.mx/maestria_informatica.php" target="_blank">Maestría en Informática Administrativa</a></li>
+        <li><a href="https://www.ingenieria.unam.mx/sistemas/" target="_blank">Maestría en Ingeniería en Sistemas</a></li>
+      </ul>
+
+      <h2>Titulación por ampliación y profundización de conocimientos en su alternativa de semestre adicional</h2>
+      <p>Consiste en cursar en un semestre adicional, durante el cual la alumna o el alumno obtendrá conocimientos y capacidades complementarias a su formación.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/formato-de-solicitud.pdf" target="_blank">Formato de solicitud</a></li>
+      </ul>
+
+      <h2>Titulación por ampliación y profundización de conocimientos en su alternativa de cursos o diplomados de educación continua</h2>
+      <p>Consiste en aprobar cursos o diplomados de educación continua impartidos por la UNAM y cuya duración sume al menos 240 horas.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/listado-de-cursos-o-diplomados.pdf" target="_blank">Listado de cursos o diplomados</a></li>
+      </ul>
+    </section>
+  </div>
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    // Cargar el contenido del archivo footer.html dentro del footer-placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

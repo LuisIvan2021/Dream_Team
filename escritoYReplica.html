@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modalidad Con Trabajo Escrito y Réplica Oral</title>
+  
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+  <!-- Iconos Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Estilo adicional -->
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #1e88e5;
+    }
+
+    footer {
+      background-color: #263238;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    a {
+      color: #1e88e5;
+    }
+  </style>
 </head>
 <body>
+  <!-- Encabezado con barra de navegación -->
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo center">Modalidad Con Trabajo Escrito y Réplica Oral</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="modalidad-trabajo-escrito">
+      <h2>Titulación mediante tesis o tesina y examen profesional</h2>
+      <p>Esta modalidad incluye la elaboración de una tesis individual o grupal o una tesis individual con réplica oral. En caso de ser grupal debes considerar los siguientes aspectos:</p>
+      <ul>
+        <li>Hasta 3 integrantes, pueden ser del mismo programa o no.</li>
+        <li>Se realiza según los artículos 17, 18, 22-27 y de 30 de los LITL FES ARAGÖN.</li>
+        <li>Requiere previa aprobación de tu jefatura.</li>
+      </ul>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/listado-de-personas-tutoras.pdf" target="_blank">Listado de tutores</a></li>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/tesis.pdf" target="_blank">Información sobre la tesis</a></li>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/tesina.pdf" target="_blank">Información sobre la tesina</a></li>
+      </ul>
+
+      <h2>Titulación por actividad de investigación en su alternativa de tesis o tesina</h2>
+      <p>Disponible únicamente para aquellos que hayan participado en algún proyecto de investigación. Documentos válidos como constancias de actividad de investigación:</p>
+      <ul>
+        <li>Constancia escrita del responsable de investigación</li>
+        <li>Carta de término y liberación de servicio social</li>
+        <li>Constancia de prácticas profesionales</li>
+      </ul>
+      <p><strong>NOTA:</strong> La constancia tiene un año de vigencia para registrar esta opción de titulación.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/investigacion-ico.pdf" target="_blank">Listado de proyectos de investigación</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script>
     
+    // Cargar el contenido del archivo footer.html dentro del footer-placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
+

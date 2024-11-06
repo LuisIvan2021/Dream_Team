@@ -64,7 +64,10 @@
                   <i class="material-icons">expand_more</i>
                   Información
                   </div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                  <div class="collapsible-body"><p>-Titulación mediante tesis o tesina y examen profesional.<br>
+                  -Titulación por actividad de investigación en su alternativa de tesis o tesina.</strong><br>
+
+                  </p></div>
                   <a id="info-button-1" class="waves-effect waves-light btn-flat small-font" style="display: none;">
                     <i class="material-icons left">add_circle_outline</i>Más Información
                   </a>
@@ -83,7 +86,10 @@
                   <i class="material-icons">expand_more</i>
                   Información
                   </div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                  <div class="collapsible-body"><p>-Titulación por actividad de apoyo a la docencia.</strong><br>
+                  -Titulación por trabajo profesional.</strong><br>
+                  -Titulación por participación en proyectos de investigación.</strong><br>
+                  </p></div>
                   <a id="info-button-2" class="waves-effect waves-light btn-flat small-font" style="display: none;">
                     <i class="material-icons left">add_circle_outline</i>Más Información
                   </a>
@@ -103,7 +109,15 @@
                   <i class="material-icons">expand_more</i>
                   Información
                   </div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                  <div class="collapsible-body"><p>-Titulación mediante examen general de conocimientos externos.<br>
+                  -Titulación por totalidad de créditos y alto nivel académico.</strong><br>
+                  -Titulación mediante estudios de posgrado.</strong><br>
+                  -Titulación por ampliación y profundización de conocimientos en su
+                  alternativa de semestre adicional</strong><br>
+                  -Titulación por ampliación y profundización de conocimientos en su
+                  alternativa de cursos o diplomados de educación continua</strong><br>
+
+                </p></div>
                   <a id="info-button-3" class="waves-effect waves-light btn-flat small-font" style="display: none;">
                     <i class="material-icons left">add_circle_outline</i>Más Información
                   </a>

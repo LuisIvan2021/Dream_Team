@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modalidad de Titulación</title>
+  
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+  <!-- Iconos Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Estilo adicional -->
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #1e88e5;
+    }
+
+    footer {
+      background-color: #263238;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    a {
+      color: #1e88e5;
+    }
+  </style>
 </head>
 <body>
-    
+    <?php include 'header.html'; ?>
+  <!-- Encabezado con barra de navegación -->
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo center">Modalidad con trabajo escrito, sin réplica oral</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="modalidad-titulacion">
+      <h2>Titulación por actividad de apoyo a la docencia</h2>
+      <p>Consiste en la creación de un trabajo escrito, que puede ser:</p>
+      <ul>
+        <li>Material didáctico.</li>
+        <li>Crítica escrita a un programa de asignatura o actividad académica.</li>
+      </ul>
+
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/material-didactico.pdf" target="_blank">Material didáctico</a></li>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/critica-escrita.pdf" target="_blank">Crítica escrita</a></li>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/listado-de-programas.pdf" target="_blank">Programas de asignaturas</a></li>
+      </ul>
+      
+      <h2>Titulación por trabajo profesional</h2>
+      <p>Opción disponible para quien haya ejercido alguna profesión relacionada con su carrera por lo menos en un tiempo de 2 años, ya sean al finalizar sus estudios o 6 meses antes.</p>
+      <h3>Requisitos:</h3>
+      <p>Presentar un informe escrito sobre la actividad profesional realizada según los lineamientos del siguiente documento:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/cise/lineamientos-internos-titulacion.pdf" target="_blank">Lineamientos internos para titulación</a></li>
+      </ul>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/informe-escrito.pdf" target="_blank">Informe escrito</a></li>
+      </ul>
+
+      <h2>Titulación por participación en proyectos de investigación</h2>
+      <p>Opción disponible para quienes hayan participado al menos 1 semestre en un proyecto de investigación aprobado por el comité académico de ingeniería en computación.</p>
+      <p>Para más información puedes consultar la siguiente información:</p>
+      <ul>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/cise/lineamientos-internos-titulacion.pdf" target="_blank">Lineamientos internos para titulación</a></li>
+        <li><a href="https://www.aragon.unam.mx/fes-aragon/public_html/documents/titulacion/computacion/proyectos-investigacion-ico.pdf" target="_blank">Listado de proyectos de investigación</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    // Cargar el contenido del archivo footer.html dentro del footer-placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
+
+
+
