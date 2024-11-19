@@ -50,7 +50,7 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center light-blue-text"><i class="material-icons">menu_book</i></h2>
             <script>
               document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.collapsible');
@@ -78,7 +78,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">arrow_downward</i></h2>
+            <h2 class="center light-blue-text"><i class="material-icons">edit</i></h2>
             <h5 class="center">Con trabajo escrito, sin réplica oral</h5>
             <ul class="collapsible">
               <li>
@@ -101,7 +101,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center light-blue-text"><i class="material-icons">lightbulb</i></h2>
             <h5 class="center">Sin trabajo escrito</h5>
             <ul class="collapsible">
               <li>
