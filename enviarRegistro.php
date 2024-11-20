@@ -7,8 +7,11 @@ $buscarusuario="SELECT * FROM  persona WHERE nombre_usuario ='$_POST[nombre_usua
 $resultado = $conexion -> query($buscarusuario);
 $count =mysqli_num_rows($resultado);
 if($count==1){
-    echo"El usuario ya esta registrado";
-    echo "<a href='./Registro.php'>Nuevo registro</a>";
+
+    echo "<script>
+            alert('El usuario ya esta registrado');
+            window.location.href = 'Registro.php';
+         </script>";
 
 }else{
 
@@ -21,7 +24,10 @@ if($count==1){
             '$_POST[email]',
             '$_POST[password]'
         )");
-        echo "<br> <h1>Usuario creado con exito</h1>";
+        echo "<script>
+            alert('Usuario creado con exito');
+            window.location.href = 'Registro.php';
+            </script>";
 
 }
  

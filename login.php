@@ -36,6 +36,10 @@
       </nav>
 
     <header class="center-align">
+        <br>
+        <br>
+        <br>
+        <br>
         <h3>Inicio de sesión</h3>
     </header>
 
@@ -61,6 +65,14 @@
         </div>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
   <!-- Footer -->
   <div id="footer-placeholder"></div>
