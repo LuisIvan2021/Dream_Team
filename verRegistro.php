@@ -1,52 +1,46 @@
 <?php
-// se usa el requiere para si psi se necesita el archivo conexion
+// Se usa el requiere para incluir el archivo de conexión
 require "conexion.php";
-mysqli_set_charset($conexion,'utf8');
+mysqli_set_charset($conexion, 'utf8');
 
+// Generar el query
+$consulta_sql = "SELECT * FROM persona";
 
-//genear el query
-$consulta_sql="SELECT * FROM persona";
-
-//mandar el query por medio de la conexion y almacenaremos el resultado en una variable
+// Ejecutar el query
 $resultado = $conexion->query($consulta_sql);
 
-// Retorna el numero de filas del resultado. Si encuentra mas de uno lo usamos para imprimir el resultado en nuestra tabla
-$count = mysqli_num_rows($resultado); 
- 
-echo "<table border='2' >
+// Retorna el número de filas del resultado. Si encuentra más de uno, imprimimos el resultado en nuestra tabla
+$count = mysqli_num_rows($resultado);
+
+echo "<table border='2'>
     <tr>
-        <th>Usuario</th>
-        <th>No Cuenta Institucional</th>
-        <th>Telefono</th>
-        <th>Correo Electronico</th>
+        <th>Número</th>
+        <th>Nombre de Usuario</th>
+        <th>No. de Cuenta</th>
+        <th>Teléfono</th>
+        <th>Correo Electrónico</th>
         <th>Contraseña</th>
         <th>Fecha de Registro</th>
     </tr>";
 
-if ( $count>0 ){
-    //aqui se pintarian los registro de la DB
-    while( $row = mysqli_fetch_assoc($resultado)  ){
-     echo "<tr>";
-     echo"<td>". $row['nombre_usuario'] ."</td>";
-     echo"<td>". $row['no_cuenta'] ."</td>";
-     echo"<td>". $row['telefono'] ."</td>";
-     echo"<td>". $row['email'] ."</td>";
-     echo"<td>". $row['password'] ."</td>";
-     echo"<td>". $row['fecha_registro'] ."</td>";
-     echo "</tr>";
-     
+if ($count > 0) {
+    // Aquí se pintarán los registros de la tabla `persona`
+    while ($row = mysqli_fetch_assoc($resultado)) {
+        echo "<tr>";
+        echo "<td>" . $row['numero'] . "</td>";
+        echo "<td>" . $row['nombre_usuario'] . "</td>";
+        echo "<td>" . $row['no_cuenta'] . "</td>";
+        echo "<td>" . $row['telefono'] . "</td>";
+        echo "<td>" . $row['email'] . "</td>";
+        echo "<td>" . $row['password'] . "</td>";
+        echo "<td>" . $row['fecha_registro'] . "</td>";
+        echo "</tr>";
     }
     echo "</table>";
-
-}else{
-    
-    ?>
-    
-    <h1 style='color:red' >Sin Ningun registro</h1>
-<?php } ?>
-    <h1><a href='EliminarUsuario.php'>ElimnarUsuario</a></h1>
-    <h1><a href='Registro.php'>Registro</a></h1>
-    
-
-
-
+} else {
+    // Mensaje si no hay registros
+    echo "<h1 style='color:red'>Sin ningún registro</h1>";
+}
+?>
+<h1><a href='EliminarUsuario.php'>Eliminar Usuario</a></h1>
+<h1><a href='index.php'>Inicio</a></h1>

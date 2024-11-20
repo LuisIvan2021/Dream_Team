@@ -22,7 +22,7 @@
       </a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <h3 class="waves-effect waves-light large-font"><a href="">Iniciar Sesión</a></h3>
+          <h3 class="waves-effect waves-light large-font"><a href="login.php">Iniciar Sesión</a></h3>
         </li>
         <li>
           <h3 class="waves-effect waves-light large-font"><a href="Registro.php">Formulario</a></h3>

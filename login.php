@@ -7,7 +7,7 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="styles.css">
-    <title>Registro en mi DB</title>
+    <title>Inicio de sesión</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <h3 class="waves-effect waves-light large-font"><a href="login.php">Iniciar Sesión</a></h3>
+              <h3 class="waves-effect waves-light large-font"><a href="registro.php">Formulario</a></h3>
             </li>
             <li>
               <h3 class="waves-effect waves-light large-font"><a href="index.php">Inicio</a></h3>
@@ -36,46 +36,31 @@
       </nav>
 
     <header class="center-align">
-        <h3>Registro en mi DB</h3>
+        <h3>Inicio de sesión</h3>
     </header>
 
     <div class="container">
         <div class="row">
-            <form class="col s12" action="enviarRegistro.php" method="post">
+            <form class="col s12" action="validarJefe.php" method="post">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="nombre_usuario" type="text" name="nombre_usuario" required maxlength="100" placeholder="Ingresa tu Nombre">
-                        <label for="nombre_usuario">Nombre de usuario</label>
+                        <input id="nombre_jefe" type="text" name="nombre_jefe" required maxlength="100" placeholder="Ingresa tu Nombre">
+                        <label for="nombre_jefe">Nombre de usuario</label>
                     </div>
                     <div class="input-field col s12">
-                        <input id="no_cuenta" type="text" name="no_cuenta" required maxlength="100" placeholder="Ingresa tu numero de cuenta">
-                        <label for="no_cuenta">Numero de cuenta</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="telefono" type="text" name="telefono" required maxlength="100" placeholder="Ingresa tu telefono">
-                        <label for="telefono">Telefono</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="email" type="email" name="email" required maxlength="100" placeholder="Ingresa tu correo">
-                        <label for="email">Correo</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="password" type="password" name="password" required maxlength="8" placeholder="Ingresa tu contraseña">
-                        <label for="password">Contraseña</label>
+                        <input id="password_jefe" type="password" name="password_jefe" required maxlength="8" placeholder="Ingresa tu contraseña">
+                        <label for="password_jefe">Contraseña</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <button type="submit" name="submit" class="btn waves-effect waves-light">Enviar registro</button>
+                        <button type="submit" name="login_submit" class="btn waves-effect waves-light">Entrar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 
-    <div class="container center-align">
-        <a href='Registro.php' class="btn-flat">Nuevo registro</a>
-    </div>
 
   <!-- Footer -->
   <div id="footer-placeholder"></div>

@@ -22,8 +22,7 @@ if($count==1){
             '$_POST[password]'
         )");
         echo "<br> <h1>Usuario creado con exito</h1>";
-        echo "<a href='./Registro.php'>Puedes generar un Nuevo registro</a>";
-        echo "<a href='./verRegistro.php'>Ver registros</a>";
+
 }
  
 
